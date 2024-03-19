@@ -3,11 +3,11 @@ const app = express();
 
 const port = 5050;
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Server is running!");
 });
 
-app.use("/test", (req, res) => {
+app.get("/test", (req, res) => {
   res.send("Server is testing!");
 });
 
