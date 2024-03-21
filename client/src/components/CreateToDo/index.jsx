@@ -20,7 +20,7 @@ export default function CreateToDo() {
         console.log(data);
         try {
             // const res = await fetch('http://localhost:5050/create-todo', {
-            const res = await fetch('https://vercel-deploy-server-beta.vercel.app', {
+            const res = await fetch('https://vercel-deploy-server-beta.vercel.app/create-todo', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
