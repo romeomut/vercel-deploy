@@ -9,8 +9,8 @@ app.use((req, res, next) => {
 });
 
 // app.use(express.json());
-// const bodyParser = require("body-parser");
-// app.use(express.json());
+const bodyParser = require("body-parser");
+app.use(express.json());
 
 //
 
