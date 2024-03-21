@@ -6,7 +6,8 @@ router.get("/", (req, res) => {
 });
 
 router.get("/test", (req, res) => {
-  res.send("Server is testing!");
+  //res.send("Server is testing!");
+  return res.status(200).json({ message: "Super" });
 });
 
 module.exports = router;
