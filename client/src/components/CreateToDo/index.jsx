@@ -17,7 +17,7 @@ export default function CreateToDo() {
     //
 
     const sendData = async (data) => {
-
+        console.log(data);
         try {
             // const res = await fetch('http://localhost:5050/create-todo', {
             const res = await fetch('https://vercel-deploy-server-beta.vercel.app', {
