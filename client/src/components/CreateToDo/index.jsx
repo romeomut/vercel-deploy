@@ -49,7 +49,7 @@ export default function CreateToDo() {
 
     //
 
-    useEffect(() => { getData() }, [text])
+    // useEffect(() => { getData() }, [text])
 
     //
 
