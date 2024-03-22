@@ -5,15 +5,13 @@ const router = express.Router();
 const sqlite = require("sqlite3").verbose();
 const db = new sqlite.Database("database.db");
 
-router.post("/create-todo", (req, res) => {
-  const { text } = req.body;
-
-  db.run("INSERT INTO todo (text) VALUES (?)", [text], (err) => {
+router.get("/get-todo", (req, res) => {
+  db.all("SELECT * FROM todo", (err, row) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
 
-    return res.status(200).json({ message: `Success - id ${this.lastId}` });
+    return res.status(200).json(row);
   });
 });
 

@@ -14,13 +14,18 @@ app.use(express.json());
 
 //
 
+const testRoutes = require("./routes/testRoutes");
+app.use(testRoutes);
+
+//
+
 const createTodo = require("./routes/createTodo");
 app.use(createTodo);
 
 //
 
-const testRoutes = require("./routes/testRoutes");
-app.use(testRoutes);
+const getTodo = require("./routes/getTodo");
+app.use(getTodo);
 
 //
 
