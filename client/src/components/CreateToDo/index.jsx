@@ -22,8 +22,9 @@ export default function CreateToDo() {
     const sendData = async (data) => {
 
         try {
-            const res = await fetch('http://localhost:5050/create-todo', {
-                //const res = await fetch('https://vercel-deploy-server-beta.vercel.app/create-todo', {
+            // const res = await fetch('http://localhost:5050/create-todo', {
+            //const res = await fetch('https://vercel-deploy-server-beta.vercel.app/create-todo', {
+            const res = await fetch('https://vercel-deploy-olzd.onrender.com/create-todo', {
 
                 method: 'POST',
                 headers: {
@@ -53,8 +54,9 @@ export default function CreateToDo() {
     const getData = async () => {
 
         try {
-            const res = await fetch('http://localhost:5050/get-todo', {
-                //const res = await fetch('https://vercel-deploy-server-beta.vercel.app/get-todo', {
+            //const res = await fetch('http://localhost:5050/get-todo', {
+            //const res = await fetch('https://vercel-deploy-server-beta.vercel.app/get-todo', {
+            const res = await fetch('https://vercel-deploy-olzd.onrender.com/get-todo', {
                 method: 'GET',
             })
 
