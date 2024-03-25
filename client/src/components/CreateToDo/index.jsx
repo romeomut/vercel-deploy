@@ -22,11 +22,8 @@ export default function CreateToDo() {
     const sendData = async (data) => {
 
         try {
-            //const res = await fetch('http://localhost:5050/create-todo', {
-            const res = await fetch('https://vercel-deploy-server-beta.vercel.app/create-todo', {
-
-                mode: 'no-cors',
-                credentials: 'include',
+            const res = await fetch('http://localhost:5050/create-todo', {
+                //const res = await fetch('https://vercel-deploy-server-beta.vercel.app/create-todo', {
 
                 method: 'POST',
                 headers: {
@@ -49,15 +46,15 @@ export default function CreateToDo() {
 
     //
 
-    // useEffect(() => { getData() }, [text])
+    useEffect(() => { getData() }, [text])
 
     //
 
     const getData = async () => {
 
         try {
-            //const res = await fetch('http://localhost:5050/get-todo', {
-            const res = await fetch('https://vercel-deploy-server-beta.vercel.app/get-todo', {
+            const res = await fetch('http://localhost:5050/get-todo', {
+                //const res = await fetch('https://vercel-deploy-server-beta.vercel.app/get-todo', {
                 method: 'GET',
             })
 
