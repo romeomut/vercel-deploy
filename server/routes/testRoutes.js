@@ -6,7 +6,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/test", (req, res) => {
-  //res.send("Server is testing!");
+  //res.send("Server is testing - super!");
   return res.status(200).json({ message: "Server is testing!" });
 });
 
